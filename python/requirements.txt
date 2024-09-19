@@ -1,0 +1,12 @@
+# requirements.txt
+
+colorama
+cycler
+matplotlib
+numba
+numba-progress
+numpy
+seaborn
+sympy
+tqdm
+typing_extensions

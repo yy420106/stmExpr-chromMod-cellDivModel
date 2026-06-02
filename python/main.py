@@ -40,7 +40,7 @@ def make_save_dir(cmd: str, temp: bool, cwd: Optional[str] = None) -> str:
     """
 
     cwd = os.getcwd() if cwd is None else cwd
-    output_dir = os.path.join(cwd, "output")
+    output_dir = os.path.join(cwd, "outputs")
 
     if not os.path.exists(output_dir):
         os.mkdir(output_dir)

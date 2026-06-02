@@ -67,12 +67,12 @@ function OUTPUT_DIR = make_output_dir()
     % Description:
     %   Make temporary diretory (date + time) to save output files.
 
-    if ~exist("output","dir")
-        mkdir("output");
+    if ~exist("outputs","dir")
+        mkdir("outputs");
     end
     
     % Create the temporary directory
     timeStamp = datetime("now","Format", 'yyyyMMddHHmmss');
-    OUTPUT_DIR = fullfile('output', string(timeStamp));
+    OUTPUT_DIR = fullfile('outputs', string(timeStamp));
     mkdir(OUTPUT_DIR);
 end
